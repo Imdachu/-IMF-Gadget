@@ -7,7 +7,7 @@ app.use(express.json());
 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'supersecretkey'; // In production, use process.env.JWT_SECRET
+const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey'; // In production, use process.env.JWT_SECRET
 
 // JWT authentication middleware
 function authenticateToken(req, res, next) {
