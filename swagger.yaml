@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: API for managing Impossible Missions Force gadgets
 servers:
-  - url: http://localhost:3000
+  - url: https://imf-gadget-api-f44k.onrender.com
 paths:
   /register:
     post:
